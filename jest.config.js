@@ -4,4 +4,6 @@ module.exports = {
   transform: {
     "^.+\\.(ts|tsx)$": "ts-jest",
   },
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/src/tests/toBeTabFocusableMatcher.ts"],
 };
